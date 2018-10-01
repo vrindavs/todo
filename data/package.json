@@ -1,0 +1,16 @@
+{
+  "name": "todo_server",
+  "version": "1.0.0",
+  "description": "For saving to do list",
+  "main": "app.js",
+  "scripts": {
+    "start": " node app.js"
+  },
+  "author": "sanal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "lowdb": "^1.0.0"
+  }
+}

@@ -1,0 +1,34 @@
+body{
+  margin: 0 auto;
+  width: 30%;
+
+  float: center;
+
+  padding: 20px;
+}
+
+.Complete{
+  color: gray;
+  text-decoration: line-through;
+}
+
+.container{
+  background: white;
+}
+
+#primary{
+  width: 100%;
+}
+
+#last>button{
+  float: left;
+  width: 50%;
+}
+#linethrough
+{
+  text-decoration: line-through black;
+}
+ol{
+  overflow-y: scroll;
+  
+}

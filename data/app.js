@@ -3,8 +3,8 @@ const bodyParser = require('body-parser')
 const low = require('lowdb')
 const FileAsync = require('lowdb/adapters/FileAsync')
 const cors = require('cors');
-
-
+//var app = express();
+var path = require('path');
 // Create server
 const app = express()
 app.use(cors());
@@ -31,7 +31,13 @@ low(adapter)
                 .value()
             res.send(post)
         })
-
+            //Get todo.html
+            app.use(express.static(path.join(__dirname,"public")));
+            app.get('/', function(req, res) {
+                res.sendFile(path.join(__dirname, "public", "todo.html"));
+            });
+            
+        //app.listen(3000);
 
         // POST /addTasks
         app.post('/addTask', (req, res) => {
